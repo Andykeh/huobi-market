@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>火币行情</title>
+    <link href="app.css" rel="stylesheet" media="screen">
+    <script src="jquery.js"></script>
+    <script src="socket.io.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+<div id="app_wrap">
+<div id="app_head">
+    <i class="logo"></i> <b>火币行情</b>
+</div>
+<div id="app_body">
+   <div class="market_info">
+       <h5>比特币</h5>
+       <p class="">最新价 : <b id="btc_info">----.----</b> <i class="icon icon_arrows"></i> </p>
+       <p>最高价 : <b id="btc_high">----.----</b></p>
+       <p>最低价 : <b id="btc_low">----.----</b></p>
+       <h5>莱特币</h5>
+       <p class="">最新价 : <b id="ltc_info">----.----</b> <i class="icon icon_arrows"></i> </p>
+       <p>最高价 : <b id="ltc_high">----.----</b></p>
+       <p>最低价 : <b id="ltc_low">----.----</b></p>
+   </div>
+</div>
+
+<div id="app_foot">
+    <div id="app_option">
+        <h5>设置价格报警(高于)</h5>
+        <div class="group">
+            <div class="col_1">
+                比特币
+            </div>
+            <div class="col_2">
+                <input type="text" id="btc_not">
+            </div>
+            <div class="col_3">元</div>
+        </div>
+        <div class="group">
+            <div class="col_1">
+                莱特币
+            </div>
+            <div class="col_2">
+                <input type="text" id="ltc_not">
+            </div>
+            <div class="col_3">元</div>
+        </div>
+        <div class="group">
+            <div class="col_1">
+                频率
+            </div>
+            <div class="col_2">
+                <input type="text" id="time_out" value="60">
+            </div>
+            <div class="col_3">秒</div>
+        </div>
+    </div>
+    <a href="#" id="option_btn">
+        <i class="icon icon_setting"></i>
+        价格预警设置
+    </a>
+</div>
+
+</div>
+
+</body>
+</html>

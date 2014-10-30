@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "Huobi Market",
+    "description": "火币实时行情. by: Andykeh",
+    "version": "1.0",
+    "permissions": [
+        "notifications"
+    ],
+    "icons": {"16": "icon_16.png", "48": "icon_48.png", "128": "icon_128.png"},
+    "browser_action": {
+        "default_icon": "icon_48.png",
+        "default_popup": "popup.html"
+    },
+    "background": { "scripts": ["jquery.js","socket.io.js","app.min.js"] }
+}
