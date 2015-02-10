@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>火币行情</title>
     <link href="app.css" rel="stylesheet" media="screen">
-    <script src="jquery.js"></script>
-    <script src="socket.io.js"></script>
-    <script src="app.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="socket.io.min.js"></script>
+    <script src="app1.1.min.js"></script>
 </head>
 
 <body>
@@ -16,21 +16,87 @@
     <i class="logo"></i> <b>火币行情</b>
 </div>
 <div id="app_body">
-   <div class="market_info">
-       <h5>比特币</h5>
-       <p class="">最新价 : <b id="btc_info">----.----</b> <i class="icon icon_arrows"></i> </p>
-       <p>最高价 : <b id="btc_high">----.----</b></p>
-       <p>最低价 : <b id="btc_low">----.----</b></p>
-       <h5>莱特币</h5>
-       <p class="">最新价 : <b id="ltc_info">----.----</b> <i class="icon icon_arrows"></i> </p>
-       <p>最高价 : <b id="ltc_high">----.----</b></p>
-       <p>最低价 : <b id="ltc_low">----.----</b></p>
-   </div>
+    <div class="market_info">
+        <dl>
+            <dt>火币 - BTC (现货) </dt>
+            <dd>
+                New
+                <br>
+                <b id="hb_btc_new">----.--</b> <i class="icon icon_arrows"></i>
+            </dd>
+            <dd class="rise">
+                Low
+                <br/>
+                <b id="hb_btc_low">----.--</b>
+            </dd>
+            <dd class="declining">
+                High
+                <br/>
+                <b id="hb_btc_high">----.--</b>
+            </dd>
+        </dl>
+        <dl>
+            <dt>火币 - LTC (现货)</dt>
+            <dd>
+                New
+                <br>
+                <b id="hb_ltc_new">----.--</b> <i class="icon icon_arrows"></i>
+            </dd>
+            <dd class="rise">
+                Low
+                <br/>
+                <b id="hb_ltc_low">----.--</b>
+            </dd>
+            <dd class="declining">
+                High
+                <br/>
+                <b id="hb_ltc_high">----.--</b>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>BitVC - BTC (期货)</dt>
+            <dd>
+                New
+                <br>
+                <b id="vc_btc_new">----.--</b> <i class="icon icon_arrows"></i>
+            </dd>
+            <dd class="rise">
+                Low
+                <br/>
+                <b id="vc_btc_low">----.--</b>
+            </dd>
+            <dd class="declining">
+                High
+                <br/>
+                <b id="vc_btc_high">----.--</b>
+            </dd>
+        </dl>
+        <dl>
+            <dt>BitVC - LTC (期货)</dt>
+            <dd class="">
+                New
+                <br>
+                <b id="vc_ltc_new">----.--</b> <i class="icon icon_arrows"></i>
+            </dd>
+            <dd class="rise">
+                Low
+                <br/>
+                <b id="vc_ltc_low">----.--</b>
+            </dd>
+            <dd class="declining">
+                High
+                <br/>
+                <b id="vc_ltc_high">----.--</b>
+            </dd>
+        </dl>
+    </div>
+
 </div>
 
 <div id="app_foot">
     <div id="app_option">
-        <h5>设置价格报警(高于)</h5>
+        <h5>现货价格预警(高于)</h5>
         <div class="group">
             <div class="col_1">
                 比特币

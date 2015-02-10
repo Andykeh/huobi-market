@@ -8,13 +8,13 @@ body{
     -webkit-user-select:   none;
 }
 a{ color: #F8EAD5; text-decoration: none}
-#app_wrap{ width: 200px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#959193), color-stop(0.5, #B0A6A6), to(#7A7170));
-    background:#000 url(bg.png) repeat 50% 0;
+#app_wrap{ width: 260px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#694C4D), color-stop(0.2, #6F6058), to(#453836));
+
     border-radius:3px;
 }
 #app_head{ padding: 10px 20px; font-size: 20px;}
-#app_body{ padding: 0 20px 15px}
+#app_body{ padding: 0 10px 15px}
 #app_foot{}
 #app_foot a{ display: block;padding: 5px 0; border-top: 1px dashed #74621C;}
 #app_foot a:hover{ background-color: #7A7170; border-radius: 0 0 3px 3px }
@@ -34,11 +34,23 @@ a{ color: #F8EAD5; text-decoration: none}
 .group .col_3{width:20%}
 .group .col_text{padding-top:10px}
 /*行情*/
-.rise{ color: #d45138
+.rise{ color: #FC9C89
 }
-.declining{ color: #27ac77
+.declining{ color: #87DBBA
 }
+
 .market_info{ line-height: 25px}
+.market_info dl{ clear: both; overflow: hidden; margin-bottom: 10px}
+.market_info dl:after{
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    clear: both;
+}
+.market_info dl dt{clear: both}
+.market_info dl dd{float: left; width: 33.3%; text-align: center; border-left:1px solid rgba(18, 18, 18, 0.18); margin-left: -1px}
+
 .market_info h5{border-bottom: 1px solid #968585}
 .market_info p{ padding: 5px 0}
 .market_info p b{ display: inline-block; width: 60px}
@@ -60,29 +72,35 @@ a{ color: #F8EAD5; text-decoration: none}
     content: "\f15a";
 }
 .icon_setting{
-    font-size: 16px;
+    background: url(setting.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
     vertical-align: middle;
 }
-.icon_setting:before{
-    content: "\f013";
-}
+
 .icon_arrows{
-    font-size: 16px; vertical-align: middle
+    width: 9px;
+    height: 11px;
+    vertical-align: middle;
+    margin-top: -2px;
 }
-.icon_arrows_down, .icon_arrows_up{font-size: 16px; vertical-align: middle}
+
+
 .icon_arrows_down,.rise .icon_arrows{
     -webkit-animation:fadeInDown 1s .2s ease infinite normal;
 }
 .icon_arrows_up,.declining .icon_arrows{
     -webkit-animation:fadeInUp 1s .2s ease infinite normal;
 }
-.icon_arrows_down:before,.rise .icon_arrows:before{
-    color: #d45138;
-    content: "\f103";
+.icon_arrows_down,.rise .icon_arrows,.icon_arrows_up,.declining .icon_arrows{
+    background-image: url(arrows.png);
+    background-repeat: no-repeat;
 }
-.icon_arrows_up:before,.declining .icon_arrows:before {
-    color: #27ac77;
-    content: "\f102";
+.icon_arrows_down,.rise .icon_arrows{
+    background-position: 0 -5px;
+}
+.icon_arrows_up,.declining .icon_arrows{
+    background-position: 0 -16px;
 }
 
 /*动画*/
