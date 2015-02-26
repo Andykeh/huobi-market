@@ -4,7 +4,7 @@
     "name": "火币行情 - Huobi",
     "description": "火币BTC,LTC,Bitvc期货实时行情,比特币，莱特币最高最低最新价.",
     "short_name": "Huobi Market",
-    "version": "1.1.1529.3",
+    "version": "1.1.1529.6",
     "permissions": [
         "notifications"
     ],
@@ -13,5 +13,5 @@
         "default_icon": "icon_48.png",
         "default_popup": "popup.html"
     },
-    "background": { "scripts": ["jquery.min.js","socket.io.min.js","app1.1.min.js"] }
+    "background": {"scripts": ["jquery.min.js","socket.io.min.js","app1.1.min.js"] }
 }

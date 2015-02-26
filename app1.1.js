@@ -135,6 +135,7 @@ function IoDetail(URI) {
         /*行情概览*/
         IoOverview: function(tradeType) {
             var marketOverview = socket_api['marketOverview'],
+                selAppWrap   = $('#app_wrap'),
                 selHbBtcNew  = $('#hb_btc_new'),
                 selHbBtcHigh = $('#hb_btc_high'),
                 selHbBtcLow  = $('#hb_btc_low'),
@@ -196,7 +197,9 @@ function IoDetail(URI) {
                         default:
                             return false;
                     }
-                    fn_Dom();
+                    if(selAppWrap.length>0){
+                        fn_Dom();
+                    }
                     Price_tip();
                 }
             }
