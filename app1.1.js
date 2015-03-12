@@ -222,7 +222,7 @@ function IoDetail(URI) {
                     selHbBtcLow.html(BitKit().Numbers(hbBtcLow,2));
                     selHbLtcNew.html(BitKit().Numbers(hbLtcNew,2));
                     selHbLtcHigh.html(BitKit().Numbers(hbLtcHigh,2));
-                    selHbLtcLow.html(BitKit().Numbers(hbBtcLow,2));
+                    selHbLtcLow.html(BitKit().Numbers(hbLtcLow,2));
                 }
             }
         }
